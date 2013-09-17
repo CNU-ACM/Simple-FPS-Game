@@ -1,7 +1,7 @@
 #include <Windows.h>
 #include <stdio.h>
+#include <SFML\Graphics.hpp>
 #include <SFML\Audio.hpp>
-#include "main_menu.h"
 
 #ifndef _DEBUG
 int main();

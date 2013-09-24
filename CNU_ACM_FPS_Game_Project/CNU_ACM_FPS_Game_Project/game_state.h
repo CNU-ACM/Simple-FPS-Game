@@ -3,6 +3,9 @@
 // If not, define it.
 #define _GAME_STATE_H_
 
+// Include the graphics header for window usage.
+#include <SFML\Graphics.hpp>
+
 /**
   * The base game state class.  Game states should extend this class
   * to help transition between menus, gameplay, etc.
@@ -15,10 +18,16 @@ public:
 	  */
 	bool paused;
 	/**
+	  *  A pointer to the window object.
+	  */
+	sf::RenderWindow* mainWindow;
+	/**
 	  * The default constructor.
 	  */
-	game_state()
+	game_state(sf::RenderWindow* mainWindow)
 	{
+		// Set the main window pointer.
+		this->mainWindow = mainWindow;
 	};
 	/**
 	  * The initialize method.  Calls the other initialize methods for logic, graphics
@@ -73,21 +82,21 @@ protected:
 	  */
 	virtual void initializeLogic()
 	{
-	}
+	};
 	/**
 	  * Initializes the graphics for the game.  Needs to be
 	  * overridden.
 	  */
 	virtual void initializeGraphics()
 	{
-	}
+	};
 	/**
 	  * Initializes the sound for the game.  Needs to be
 	  * overridden.
 	  */
 	virtual void initializeSound()
 	{
-	}
+	};
 private:
 	// No private sections for this class.
 };

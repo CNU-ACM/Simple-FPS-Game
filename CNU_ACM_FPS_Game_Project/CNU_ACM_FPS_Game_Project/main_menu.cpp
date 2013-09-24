@@ -3,7 +3,24 @@
 
 void main_menu::initializeGraphics()
 {
-	printf("main menu");
+	printf("main menu-initializeGraphics\n"); 
+}
+void main_menu::initializeLogic()
+{
+	printf("main menu-initializeLogic\n");
+}
+void main_menu::initializeSound()
+{
+	printf("main menu-initializeSound\n");
+}
+
+bool main_menu::updateGraphics()
+{
+	return true;
+}
+bool main_menu::updateSound()
+{
+	return true;
 }
 
 bool main_menu::updateLogic()

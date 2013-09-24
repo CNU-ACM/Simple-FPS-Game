@@ -10,8 +10,12 @@ public:
 	{
 	}
 	bool updateLogic();
+	bool updateGraphics();
+	bool updateSound();
 protected:
+	void initializeLogic();
 	void initializeGraphics();
+	void initializeSound();
 };
 
 #endif

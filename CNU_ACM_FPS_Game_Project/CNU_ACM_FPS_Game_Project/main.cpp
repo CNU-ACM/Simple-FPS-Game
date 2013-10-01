@@ -45,6 +45,7 @@ int main()
 				mainWindow.close();
 				return 0;
 			case sf::Event::Resized:
+				glViewport(0, 0, windowPollEvent.size.width, windowPollEvent.size.height);
 				break;
 			case sf::Event::GainedFocus:
 				break;

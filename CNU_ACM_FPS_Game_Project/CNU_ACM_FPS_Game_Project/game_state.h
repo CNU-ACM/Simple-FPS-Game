@@ -5,6 +5,7 @@
 
 // Include the graphics header for window usage.
 #include <SFML\Graphics.hpp>
+#include <SFML\OpenGL.hpp>
 
 /**
   * The base game state class.  Game states should extend this class

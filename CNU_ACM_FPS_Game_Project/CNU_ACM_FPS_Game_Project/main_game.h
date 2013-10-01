@@ -9,8 +9,13 @@ public:
 	main_game(sf::RenderWindow* mainWindow) : game_state(mainWindow)
 	{
 	}
+	bool updateLogic();
+	bool updateGraphics();
+	bool updateSound();
 protected:
+	void initializeLogic();
 	void initializeGraphics();
+	void initializeSound();
 };
 
 #endif
